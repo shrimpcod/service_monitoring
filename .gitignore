@@ -1,0 +1,17 @@
+# Виртуальное окружение
+venv/
+.venv/
+env/
+
+# Python файлы
+__pycache__/
+*.py[cod]
+*$py.class
+
+# База данных и секреты
+.env
+test.db
+*.log
+
+# Docker
+.docker

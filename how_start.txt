@@ -1,0 +1,4 @@
+In service_monitor:
+docker-compose up -d
+venv\Scripts\activate
+uvicorn app.main:app --reload
