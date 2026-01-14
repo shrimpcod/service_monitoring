@@ -86,7 +86,7 @@ async def get_service_sla(
     service = result.scalars().first()
 
     if not service:
-        return HTTPException(status_code=404, detail="Service not found")
+        raise HTTPException(status_code=404, detail="Service not found")
 
     sla_data = calculate_sla(
         service_name = service.name,
